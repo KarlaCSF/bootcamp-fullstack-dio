@@ -1,5 +1,8 @@
 body {
+    color: lightgrey;
     font-family: Calibri;
+    max-width: 1000px;
+    margin: auto;
 }
 #title, .subtitle, .post_title {
     color: rgb(96, 96, 96);
@@ -13,6 +16,12 @@ a {
     text-transform: uppercase;
 }
 
+.photo {
+    border-radius: 50%;
+    border: 5px dotted black;
+    height: 150px;
+}
+
 .post {
     background: lightgray;
     padding: 20px;
@@ -23,18 +32,20 @@ a {
 .post_content {
     margin: 0;
     margin-bottom: 15px;
+    text-align: justify;
+    color: black;
 }
 
 .post_image {
     margin-bottom: 15px;
-    border-radius: 50%;
-    border: 5px dotted black;
+    width: 100%;
 }
 
-.lista {
+.lista1, .lista2 {
+    color: black;
     list-style-type: square;
 }
 
-.lista li {
+.lista1 li {
     text-decoration: line-through;
 }
