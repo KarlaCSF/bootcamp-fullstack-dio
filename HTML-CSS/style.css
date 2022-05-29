@@ -30,3 +30,11 @@ a {
     border-radius: 50%;
     border: 5px dotted black;
 }
+
+.lista {
+    list-style-type: square;
+}
+
+.lista li {
+    text-decoration: line-through;
+}
