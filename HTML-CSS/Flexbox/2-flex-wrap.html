@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex wrap</title>
+
+    <style>
+        .flex-container {
+            display: flex;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 300px;
+        }
+
+        .item {
+            font-size: 20px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 60px;
+        }
+
+        .nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .wrap {
+            flex-wrap: wrap;
+        }
+
+        .wrap-reverse {
+            flex-wrap: wrap-reverse;
+        }
+
+        .blue {
+            background-color: skyblue;
+        }
+
+        .green {
+            background-color: limegreen;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>no wrap</h1>
+
+    <div class="flex-container">
+        <div class="item blue">1</div>
+        <div class="item red">2</div>
+        <div class="item green">3</div>
+        <div class="item blue">4</div>
+    </div>
+
+    <h1>wrap</h1>
+
+    <div class="flex-container wrap">
+        <div class="item blue">1</div>
+        <div class="item red">2</div>
+        <div class="item green">3</div>
+        <div class="item blue">4</div>
+    </div>
+    
+    <h1>wrap reverse</h1>
+
+    <div class="flex-container wrap-reverse">
+        <div class="item blue">1</div>
+        <div class="item red">2</div>
+        <div class="item green">3</div>
+        <div class="item blue">4</div>
+    </div>
+</body>
+</html>
