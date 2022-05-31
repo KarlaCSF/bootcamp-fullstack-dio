@@ -34,6 +34,10 @@
             flex-wrap: wrap-reverse;
         }
 
+        .rowrev-wraprev {
+            flex-flow: row-reverse wrap-reverse;
+        }
+
         .blue {
             background-color: skyblue;
         }
@@ -70,6 +74,15 @@
     <h1>wrap reverse</h1>
 
     <div class="flex-container wrap-reverse">
+        <div class="item blue">1</div>
+        <div class="item red">2</div>
+        <div class="item green">3</div>
+        <div class="item blue">4</div>
+    </div>
+
+    <h1>flex-flow (direction e wrap)</h1>
+    <h2>row-reverse wrap-reverse</h2>
+    <div class="flex-container rowrev-wraprev">
         <div class="item blue">1</div>
         <div class="item red">2</div>
         <div class="item green">3</div>
