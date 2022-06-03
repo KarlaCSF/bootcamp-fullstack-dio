@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align self</title>
+    <style>
+        .flex-container {
+            display: flex;
+            border: 2px solid gray;
+            max-width: 350px;
+        }
+
+        .item {
+            flex: 1;;
+            background-color: darkred;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 5px;
+        }
+
+        .auto {
+            align-self: auto;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .end {
+            align-self: end;
+        }
+
+        .baseline {
+            align-self: baseline;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <h2>align-self: auto</h2>
+    <section class="flex-container">
+        <div class="item auto">A</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet, consectetur.</div>
+        <div class="item auto">item 4</div>
+    </section>
+
+    <h2>align-self: mix</h2>
+    <section class="flex-container">
+        <div class="item center">A</div>
+        <div class="item end">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet, consectetur.</div>
+        <div class="item baseline">item 4</div>
+        <div class="item stretch">ABC12</div>
+    </section>
+
+    <h1>column</h1>
+    <h2>align-self: auto</h2>
+    <section class="flex-container column">
+        <div class="item auto">A</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet, consectetur.</div>
+        <div class="item auto">item 4</div>
+    </section>
+
+    <h2>align-self: mix</h2>
+    <section class="flex-container column">
+        <div class="item center">A</div>
+        <div class="item end">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet, consectetur.</div>
+        <div class="item baseline">item 4</div>
+        <div class="item stretch">ABC12</div>
+    </section>
+</body>
+</html>
